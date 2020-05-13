@@ -1,38 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost&family=Ubuntu&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    background-image: url('https://www.konfest.com/wp-content/uploads/2019/05/Konfest-PNG-JPG-Image-Pic-Photo-Free-Download-Royalty-Unlimited-clip-art-sticker-Vector-Abstract-Background-Geometric-Blue-6.png');
-    background-size: auto 100vh;
+    background-image: url('');
+    background-size: 100vw 100vh;
     height: 100vh;
-    font-family: Arial;
-  }
-  
-  .menu {
-    background-color: pink;
-  }
-  
-  a {
-    color: teal;
+    font-family: 'Just', 'Ubuntu';
+    font-size: 15px;
+}
+
+
+/* se a tela tiver pelo menos 400px vai carregar essses estilos */
+
+@media (min-width: 400px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+header {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #505050;
+}
+
+.menu {
+    background-color: #505050;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+}
+
+.menu a {
+    display: flex;
+    padding: 10px 20px;
+    color: #efe4c9;
     text-decoration: none;
-  }
-  
-  a:hover {
+}
+
+a:hover {
     text-decoration: underline;
-  }
-  
-  .menu ul {
+    background-color: #86316d;
+}
+
+.menu ul {
     display: flex;
     justify-content: space-around;
-  }
-  
-  .menu li {
+}
+
+.menu li {
     list-style: none;
-  }
-  
-  .site-subtitle,
-  .site-title {
+}
+
+.logo {
+    width: 500px;
+    height: 346;
+    border: 3px solid #efe4c9;
+    font-size: 40px;
+}
+
+.site-title {
+    padding: 80px;
     text-align: center;
-    color: teal;
-  }
-  
-  .site-subtitle {
-    font-style: italic;
-  }
+    color: #efe4c9;
+}
+
+.site-subtitle {
+    text-align: center;
+    font-size: 20px;
+    color: #efe4c9;
+    border: 3px solid #efe4c9;
+    width: 200px;
+    height: 70px;
+}
+
+section img {
+    height: 150px;
+    width: 150px;
+}
