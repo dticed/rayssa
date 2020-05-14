@@ -82,7 +82,46 @@ a:hover {
     height: 70px;
 }
 
-section img {
-    height: 150px;
-    width: 150px;
+.portfolio {
+    padding: 2em;
+    background-color: #c8c8c8;
+    height: 100vh;
+}
+
+.portfolio h2 {
+    font-family: 'Just';
+    margin-bottom: 1.5em;
+    font-size: 2em;
+}
+
+.portfolio .grid {
+    display: grid;
+    gap: 4em;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 560px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px;
+    }
+}
+
+@media (min-width: 880px) {
+    .portfolio .grid {
+        grid-template-columns: 240px 240px 240px;
+        align-content: center;
+        justify-content: center;
+        height: calc(100vh - 4em - 48px - 8em);
+    }
+}
+
+.portfolio figure {
+    text-align: center;
+}
+
+.img-portfolio {
+    height: auto;
+    width: 250px;
+    object-fit: cover;
 }
