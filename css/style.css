@@ -1,127 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Jost&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
-    background-image: url('');
-    background-size: 100vw 100vh;
-    height: 100vh;
-    font-family: 'Just', 'Ubuntu';
-    font-size: 15px;
+    background-image: url(file:///C:/Users/Lucas/Desktop/imersao-css/rayssa/img/texture.png), linear-gradient(-135deg, #580658, #f0b9c2);
+    font-size: 16px;
 }
-
-
-/* se a tela tiver pelo menos 400px vai carregar essses estilos */
 
 @media (min-width: 400px) {
     body {
-        font-size: 20px;
+        font-size: 15px;
     }
 }
 
-header {
-    height: 100vh;
+.container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #505050;
-}
-
-.menu {
-    background-color: #505050;
-    position: fixed;
-    width: 100vw;
+    justify-content: flex-start;
+    position: absolute;
     top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    max-width: 75em;
+    height: 35em;
+    max-height: 90%;
+    background-color: whitesmoke;
+    margin: auto;
+    overflow: auto;
+    border-radius: 10px;
+    box-shadow: 5px 5px 18px #333;
 }
 
-.menu a {
+.container .text {
     display: flex;
-    padding: 10px 20px;
-    color: #efe4c9;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-    background-color: #86316d;
-}
-
-.menu ul {
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu li {
-    list-style: none;
-}
-
-.logo {
-    width: 500px;
-    height: 346;
-    border: 3px solid #efe4c9;
-    font-size: 40px;
-}
-
-.site-title {
-    padding: 80px;
-    text-align: center;
-    color: #efe4c9;
-}
-
-.site-subtitle {
-    text-align: center;
-    font-size: 20px;
-    color: #efe4c9;
-    border: 3px solid #efe4c9;
-    width: 200px;
-    height: 70px;
-}
-
-.portfolio {
-    padding: 2em;
-    background-color: #c8c8c8;
-    height: 100vh;
-}
-
-.portfolio h2 {
-    font-family: 'Just';
-    margin-bottom: 1.5em;
-    font-size: 2em;
-}
-
-.portfolio .grid {
-    display: grid;
-    gap: 4em;
     justify-content: center;
     align-items: center;
+    width: 60%;
+    height: 100%;
 }
 
-@media (min-width: 560px) {
-    .portfolio .grid {
-        grid-template-columns: 240px 240px;
-    }
+.container .text .align {
+    width: 60%;
 }
 
-@media (min-width: 880px) {
-    .portfolio .grid {
-        grid-template-columns: 240px 240px 240px;
-        align-content: center;
-        justify-content: center;
-        height: calc(100vh - 4em - 48px - 8em);
-    }
+.container .text .align .introduction {
+    font-family: 'Grand Hotel', sans-serif;
+    font-size: 2.8em;
+    color: grey;
 }
 
-.portfolio figure {
-    text-align: center;
+.container .text .align .name {
+    width: 60%;
+    height: 100%;
+    font-family: 'Grand Hotel', sans-serif;
+    font-size: 7.5em;
 }
 
-.img-portfolio {
-    height: auto;
-    width: 250px;
-    object-fit: cover;
+.icons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0.5em;
+    font-size: 2em;
+    left: 11px;
+    position: relative;
+}
+
+.icons a {
+    color: rgb(196, 153, 153);
+}
+
+.image {
+    width: 40%;
+    height: 100%;
+    background-image: url('https://lh3.googleusercontent.com/LDOJzBCOF2kx7tDNdIl0WWzyMAo78RAG_MQCx9ye-uYEWHuZiJ_3dbCVhN-InowaTgqLv8CSzsRXsq_KelMKTn5YexWb73QPS9qYPOlMIWsWTvhwLZioaqUw7TDglVrlUs59h0x3sAACvUWRgYjXjTuJAj0hy8wgF4K76V0nFRelD56gqeViA2VpPJ5Y5SYwWffSk5VvxSHXWZrCznfH5ThqwnbppDXcmhNHIxMc8zOalVpp5NK65_tj5GAT6CQO837Z44_vCXElbUIiZnTkn32cMXbRrSKnt7MncZpn4AdTDNg5w9_S7Js0-o1AOcGTQ7piDKuqb-TjvZNZmj-8UOHOY7u1aaRFcz1w0t7wRVOMWog50HFNx8Y6G-X51IBFmzEFR-O1oN6_5mOl8m3nErzi3LuCEF-boVTA6o5HIhwJ0U_BuhKePB5DrteRJXDhp0464T-NZX_yq6sMp_g-kCbh4fsru427BNqX2vS-ucYNXN8qm1HZwWIBncUQbCNtfvJ6bVFZfFwZtPkH7awVni7bXbycT_IaCuSI58US1Ho_Hrsj5AXOM3X2M6WoYV0TPOuH_-mDI5uasKTnQzKyqGcqT_oBSK0xm5mhBjVcP0HQ0dfKg8xOTCBwldqeOtK98pcDh9RBef6WeEMXs3552tSSZHvrcF_hTA11NnlSw9no-zQ=w734-h977-no?authuser=0');
+    background-size: cover;
+    background-position: top center;
 }
